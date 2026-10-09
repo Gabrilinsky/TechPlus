@@ -76,17 +76,37 @@ input {
     display: flex;
     align-items: center;
     gap: 10px;
-
-    font-size: 1.5rem;
-    font-weight: bold;
-
-    color: var(--azul);
-
-    flex-grow: 1;
+    font-family: Arial, sans-serif;
 }
 
 .logo-icon {
-    font-size: 1.7rem;
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+.logo-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.nombre-titulo{
+    font-size: 1,8rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.Tech{
+    color: #000000;
+}
+
+.Plus{
+    color: #1a52ed;
+}
+.soluciones{
+    margin-top: 4px;
+    font-size: 0.85rem;
+    color: #757575;
+    font-weight: normal;
 }
 
 
@@ -382,42 +402,6 @@ main {
 }
 
 
-/*
-    Estos fondos representan
-    distintos destinos.
-*/
-
-.torres {
-    background: linear-gradient(
-        135deg,
-        #31566d,
-        #9dc5d8
-    );
-}
-
-.cusco {
-    background: linear-gradient(
-        135deg,
-        #8d6549,
-        #d9b88f
-    );
-}
-
-.cancun {
-    background: linear-gradient(
-        135deg,
-        #1594b6,
-        #8de2ed
-    );
-}
-
-.madrid {
-    background: linear-gradient(
-        135deg,
-        #75616a,
-        #d6a8b1
-    );
-}
 
 
 /* CONTENIDO */
@@ -450,25 +434,7 @@ main {
 }
 
 
-/* BOTÓN VER MÁS */
 
-.btn-ver-mas {
-    align-self: flex-start;
-
-    margin-top: auto;
-
-    padding: 8px 14px;
-
-    border: none;
-
-    border-radius: 5px;
-
-    background-color: var(--azul);
-
-    color: white;
-
-    cursor: pointer;
-}
 
 .btn-ver-mas:hover {
     opacity: 0.9;
@@ -639,7 +605,7 @@ main {
 
 /* Estilos para que la imagen se vea bien y del mismo tamaño siempre */
 #imagen-carrusel {
-  width: 500px;
+  width: 300px;
   height: 300px;
   object-fit: cover; /* Evita que la imagen se estire feo */
   border-radius: 8px;
@@ -660,3 +626,20 @@ main {
   background-color: #0056b3; /* Color más oscuro al pasar el mouse */
 }
 
+.destino-card1 {
+    background-color: var(--blanco);
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    border: 1px solid #ddd;
+
+ 
+    flex: 1 1 230px;
+
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+}
